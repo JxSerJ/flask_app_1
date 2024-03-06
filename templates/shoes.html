@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for element in data %}
+    <h1>{{ element.name }}</h1>
+    <a href={{  element.url }}>Ссылка на страницу товара</a>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header class="accordion-header">
+  Я шапка сайта. Могу повторяться на других страницах.
+    <br>МЕНЮ:<p><a href="http://127.0.0.1:5000/cloth">Одежда</a>  <a href="http://127.0.0.1:5000/shoes">Обувь</a></p>
+</header>
+<main>
+<p></p>
+    {% block content %}
+  Я основной контент! Живу только на этой странице.
+    {% endblock %}
+<p></p>
+</main>
+<footer>
+    <p>Я подвал сайта, я как шапка.</p>
+    <a href="http://127.0.0.1:5000">Главная страница</a>
+</footer>
+</body>
+</html>
